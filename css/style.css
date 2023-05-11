@@ -1,0 +1,204 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "about about about about"
+    "services services services services"
+    "clients clients clients clients"
+    "projects projects projects projects"
+    "contact contact contact contact"
+    "footer footer footer footer";
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+}
+
+.header {
+  grid-area: header;
+  height: 95vh;
+  width: 100%;
+  background: url("../Images/Desktop/image-header.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo {
+  height: 30px;
+  width: 130px;
+}
+
+.menu {
+  display: flex;
+  gap: 70px;
+}
+.menu li a {
+  color: var(--White);
+  transition: 0.3s ease-in-out;
+  padding: 15px;
+}
+
+.menu li a:hover {
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--White);
+  border-radius: 40px;
+}
+
+.slogan {
+  position: absolute;
+  left: 250px;
+  top: 200px;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 12px;
+}
+
+.seta {
+  width: 20px;
+  position: absolute;
+  left: 610px;
+  top: 320px;
+}
+
+.about {
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about .image {
+  height: 100%;
+  width: 100%;
+}
+.about .image.right {
+  background: url("../Images/Desktop/image-transform.jpg") center no-repeat;
+  background-size: cover;
+}
+.about .image.left {
+  background: url("../Images/Desktop/image-stand-out.jpg") center center
+    no-repeat;
+  background-size: cover;
+}
+.about .item {
+  padding: 40px 150px;
+  margin: auto;
+}
+
+.about .item h2 {
+  margin-bottom: 30px;
+}
+
+.about .item p {
+  font-size: 13px;
+  font-family: "Barlow", sans-serif;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+
+.about .item .btn-learn-more {
+  font-size: 12px;
+}
+.about .item .btn-learn-more.yellow:hover {
+  text-decoration: underline 5px var(--Yellow);
+}
+.about .item .btn-learn-more.pink:hover {
+  text-decoration: underline 5px var(--Soft-red);
+}
+
+.services {
+  grid-area: services;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services .design {
+  background: url("../Images/Desktop/image-graphic-design.jpg") center center
+    no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.services .photo {
+  background: url("../Images/Desktop/image-photography.jpg") center center
+    no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.services .text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  text-align: center;
+  gap: 30px;
+}
+
+.services .design .text-design {
+  color: var(--Dark-desaturated-cyan);
+  font-family: "Barlow", sans-serif;
+}
+.services .design .text h3 {
+  font-family: "Fraunces", serif;
+}
+.services .photo .text-photo {
+  color: var(--Dark-blue);
+  font-family: "Barlow", sans-serif;
+}
+.services .photo .text h3 {
+  font-family: "Fraunces", serif;
+}
+
+.clients {
+  grid-area: clients;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 140px 70px 0;
+  gap: 30px;
+  height: 300px;
+}
+.clients img {
+  border-radius: 50%;
+  width: 60px;
+  margin-bottom: 50px;
+}
+.clients p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 50px;
+  font-family: "Barlow", sans-serif;
+  color: var(--Very-dark-rayish-blue);
+}
+.clients span {
+  color: var(--Very-dark-desaturated-blue);
+}
+.clients .position {
+  margin-top: 10px;
+  color: var(--Grayish-blue);
+}
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.projects img {
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  transition: 0.4s ease-in-out;
+}
+.projects a:hover img {
+  opacity: 70%;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}
