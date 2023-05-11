@@ -6,13 +6,13 @@ body {
     "services services services services"
     "clients clients clients clients"
     "projects projects projects projects"
-    "contact contact contact contact"
-    "footer footer footer footer";
+    "contact contact contact contact";
 
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr);
   font-size: 18px;
   font-family: "Fraunces", serif;
+  height: 100vh;
 }
 
 .header {
@@ -184,9 +184,10 @@ body {
   grid-area: projects;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
 }
 .projects img {
-  height: 50%;
+  height: 100%;
   width: 100%;
   background-size: cover;
   transition: 0.4s ease-in-out;
@@ -199,6 +200,39 @@ body {
   grid-area: contact;
 }
 
-.footer {
-  grid-area: footer;
+.contact {
+  grid-area: contact;
+  background-color: var(--Dark-moderate-cyan);
+  height: 300px;
+  text-align: center;
+}
+
+.logo-footer {
+  margin-top: 60px;
+  height: 30px;
+  width: 130px;
+}
+
+.contact .menu-footer ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 40px;
+  font-family: "Barlow", sans-serif;
+  justify-content: center;
+}
+.contact .menu-footer ul a {
+  color: var(--Dark-desaturated-cyan);
+}
+.contact .menu-footer ul a:hover {
+  color: var(--White);
+}
+.contact .social {
+  margin-top: 60px;
+}
+.contact .social a {
+  margin: 15px;
+}
+.contact .social a img:hover {
+  filter: brightness(100);
 }
