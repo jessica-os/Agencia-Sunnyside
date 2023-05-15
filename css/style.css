@@ -119,38 +119,30 @@ body {
   background-size: cover;
   height: 550px;
 }
-.services .design .description {
+.services .description {
   text-align: center;
   margin-top: 350px;
 }
-.services .color1 {
-  color: var(--Dark-desaturated-cyan);
-}
-.services .design .description p {
+
+.services .description p {
   margin: 35px 0 0 150px;
   font-family: "Barlow", sans-serif;
   font-size: 13px;
   width: 350px;
 }
 
-.services .photografhy {
+.services .photography {
   background: url("../Images/Desktop/image-photography.jpg") center center
     no-repeat;
   background-size: cover;
   height: 550px;
 }
-.services .photografhy .description {
-  text-align: center;
-  margin-top: 350px;
+.services .color1 {
+  color: var(--Dark-desaturated-cyan);
 }
+
 .services .color2 {
   color: var(--Dark-blue);
-}
-.services .photografhy .description p {
-  margin: 35px 0 0 150px;
-  font-family: "Barlow", sans-serif;
-  font-size: 13px;
-  width: 350px;
 }
 
 .clients {
