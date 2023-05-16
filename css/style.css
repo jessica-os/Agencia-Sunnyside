@@ -30,23 +30,6 @@ body {
   width: 130px;
 }
 
-.menu {
-  display: flex;
-  gap: 70px;
-}
-.menu li a {
-  color: var(--White);
-  transition: 0.3s ease-in-out;
-  padding: 15px;
-}
-
-.menu li a:hover {
-  color: var(--black);
-  text-transform: uppercase;
-  background-color: var(--White);
-  border-radius: 40px;
-}
-
 .slogan {
   position: absolute;
   left: 250px;

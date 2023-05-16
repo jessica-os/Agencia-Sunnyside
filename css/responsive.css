@@ -1,0 +1,54 @@
+@media (max-width: 1280px) {
+  .slogan {
+    left: 250px;
+    top: 200px;
+  }
+  .seta {
+    left: 640px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slogan {
+    left: 100px;
+    top: 400px;
+  }
+  .seta {
+    left: 500px;
+    top: 550px;
+  }
+  .services .description p {
+    margin: 35px 0 0 90px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header .menu {
+    display: block;
+  }
+  .header nav ul {
+    display: none;
+  }
+  .header ul li {
+    font-size: 14px;
+    padding: 20px;
+  }
+  .header input:checked ~ ul {
+    display: block;
+    background-color: #fff;
+    width: 250px;
+    height: 235px;
+    text-align: center;
+    align-items: center;
+  }
+  .header input:checked ~ ul li a {
+    color: var(--Dark-grayish-blue);
+  }
+
+  .header input:checked ~ ul li a:hover {
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--Yellow);
+    border-radius: 40px;
+  }
+}
