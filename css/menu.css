@@ -1,6 +1,9 @@
+.header nav {
+  height: 100px;
+}
 .header ul {
   display: flex;
-  gap: 70px;
+  gap: 30px;
 }
 .header li a {
   color: var(--White);
@@ -9,9 +12,8 @@
 }
 
 .header li a:hover {
-  color: var(--black);
   text-transform: uppercase;
-  background-color: var(--White);
+  background-color: rgba(225, 240, 200, 0.4);
   border-radius: 40px;
 }
 

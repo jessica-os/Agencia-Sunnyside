@@ -32,10 +32,10 @@ body {
 
 .slogan {
   position: absolute;
-  left: 250px;
+  left: 300px;
   top: 200px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 12px;
 }
 
@@ -65,8 +65,7 @@ body {
   background-size: cover;
 }
 .about .item {
-  padding: 40px 150px;
-  margin: auto;
+  padding: 20%;
 }
 
 .about .item h2 {
