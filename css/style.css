@@ -2,6 +2,7 @@ body {
   display: grid;
   grid-template-areas:
     "header header header header"
+    "hero hero hero hero"
     "about about about about"
     "services services services services"
     "clients clients clients clients"
@@ -9,19 +10,19 @@ body {
     "contact contact contact contact";
 
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  /* grid-template-rows: repeat(7, 1fr); */
   font-size: 18px;
   font-family: "Fraunces", serif;
   height: 100vh;
+  justify-content: center;
 }
 
 .header {
   grid-area: header;
-  height: 95vh;
-  width: 100%;
-  background: url("../Images/Desktop/image-header.jpg") center center no-repeat;
-  background-size: cover;
-  padding: 40px;
+  display: grid;
+  background-color: var(--Soft-Blue);
+  height: 15vh;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -29,21 +30,24 @@ body {
   height: 30px;
   width: 130px;
 }
-
-.slogan {
-  position: absolute;
-  left: 300px;
-  top: 200px;
-  color: #fff;
+.hero {
+  grid-area: hero;
+  background: url("../Images/Desktop/image-header.jpg") center center no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.hero .slogan {
+  color: var(--White);
   font-size: 40px;
   letter-spacing: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
-
-.seta {
-  width: 20px;
-  position: absolute;
-  left: 610px;
-  top: 320px;
+.hero .seta {
+  width: 25px;
+  display: flex;
+  margin: 80px auto;
 }
 
 .about {
@@ -102,15 +106,19 @@ body {
   height: 550px;
 }
 .services .description {
-  text-align: center;
-  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20%;
+  margin-top: 250px;
 }
 
 .services .description p {
-  margin: 35px 0 0 150px;
   font-family: "Barlow", sans-serif;
   font-size: 13px;
-  width: 350px;
+  max-width: 350px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .services .photography {
@@ -119,14 +127,13 @@ body {
   background-size: cover;
   height: 550px;
 }
-.services .color1 {
+.services .design {
   color: var(--Dark-desaturated-cyan);
 }
 
-.services .color2 {
+.services .photography {
   color: var(--Dark-blue);
 }
-
 .clients {
   grid-area: clients;
   display: grid;
@@ -134,8 +141,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 140px 70px 0;
-  gap: 30px;
+  margin: 100px 70px 0;
+  gap: 40px;
   height: 300px;
 }
 .clients img {
