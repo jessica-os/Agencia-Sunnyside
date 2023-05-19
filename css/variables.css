@@ -10,5 +10,6 @@
   --Grayish-blue: hsl(210, 4%, 67%);
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
-  --Soft-Blue: hsl(189, 65%, 54%);
+  --Soft-Blue: hsl(200, 96%, 61%);
+  --Soft-Grey: hsla(83, 57%, 86%, 0.4);
 }

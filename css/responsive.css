@@ -1,159 +1,156 @@
 @media (max-width: 900px) {
-  .header .menu {
-    display: block;
-  }
-  .header nav ul {
-    display: none;
-  }
-  .header ul li {
-    font-size: 14px;
-    padding: 20px;
-  }
-  .header input:checked ~ ul {
-    display: block;
-    background-color: #fff;
-    width: 250px;
-    height: 235px;
-    text-align: center;
-    align-items: center;
-  }
-  .header input:checked ~ ul li a {
-    color: var(--Dark-grayish-blue);
-  }
+	.header .menu {
+		display: block;
+	}
+	.header nav ul {
+		display: none;
+	}
+	.header ul li {
+		font-size: 14px;
+		padding: 20px;
+	}
+	.header input:checked ~ ul {
+		display: block;
+		background-color: var(--White);
+		width: 200px;
+		height: 235px;
+		text-align: center;
+		align-items: center;
+	}
+	.header input:checked ~ ul li a {
+		color: var(--Dark-grayish-blue);
+	}
 
-  .header input:checked ~ ul li a:hover {
-    color: var(--black);
-    text-transform: uppercase;
-    background-color: var(--Yellow);
-    border-radius: 40px;
-  }
-  .about .item h2 {
-    font-size: 22px;
-  }
+	.header input:checked ~ ul li a:hover {
+		color: var(--black);
+		text-transform: uppercase;
+		background-color: var(--Yellow);
+		border-radius: 40px;
+	}
+	.about .item h2 {
+		font-size: 22px;
+	}
 }
 @media (max-width: 700px) {
-  .services .design {
-    background: url("../Images/Mobile/image-graphic-design.jpg") center center
-      no-repeat;
-    background-size: cover;
-    height: 550px;
-  }
-  .services .photography {
-    background: url("../Images/Mobile/image-photography.jpg") center center
-      no-repeat;
-    background-size: cover;
-    height: 550px;
-  }
+	.services .design {
+		background: url("../Images/Mobile/image-graphic-design.jpg") center center no-repeat;
+		background-size: cover;
+		height: 550px;
+	}
+	.services .photography {
+		background: url("../Images/Mobile/image-photography.jpg") center center no-repeat;
+		background-size: cover;
+		height: 550px;
+	}
 }
 @media (max-width: 650px) {
-  .hero .slogan {
-    font-size: 32px;
-  }
+	.hero .slogan {
+		font-size: 32px;
+	}
 }
 @media (max-width: 550px) {
-  .hero .slogan {
-    font-size: 25px;
-  }
-  .hero .seta {
-    width: 20px;
-  }
+	.hero .slogan {
+		font-size: 25px;
+	}
+	.hero .seta {
+		width: 20px;
+	}
 }
 @media (max-width: 470px) {
-  .hero .slogan {
-    font-size: 20px;
-  }
+	.hero .slogan {
+		font-size: 20px;
+	}
 }
 @media (max-width: 425px) {
-  .header {
-    height: 10vh;
-  }
-  .hero {
-    background: url("../Images/Mobile/image-header.jpg") center center no-repeat;
-    background-size: cover;
-    height: 60vh;
-  }
-  .hero .slogan {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 900;
-  }
+	.header {
+		height: 10vh;
+	}
 
-  .about {
-    grid-template-columns: 1fr;
-  }
-  .about .item {
-    padding: 15%;
-    text-align: center;
-  }
-  .about .item h2 {
-    font-size: 23px;
-    margin-bottom: 20px;
-    font-weight: 900;
-  }
+	.hero {
+		background: url("../Images/Mobile/image-header.jpg") center center no-repeat;
+		background-size: cover;
+		height: 60vh;
+	}
+	.hero .slogan {
+		font-size: 30px;
+		text-align: center;
+		font-weight: 900;
+	}
 
-  .about .item p {
-    font-size: 15px;
-    font-family: "Barlow", sans-serif;
-    color: var(--Dark-grayish-blue);
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .about .image.right {
-    background: url("../Images/Mobile/image-transform.jpg") center center
-      no-repeat;
-    background-size: cover;
-    height: 50vh;
-  }
-  .about .image.left {
-    background: url("../Images/Mobile/image-stand-out.jpg") center center
-      no-repeat;
-    background-size: cover;
-    height: 50vh;
-  }
-  .services {
-    grid-area: services;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .services h3 {
-    margin-top: 30px;
-    font-weight: 900;
-    font-size: 22px;
-  }
-  .services .description {
-    padding: 10%;
-    margin-top: 250px;
-  }
-  .services .description p {
-    font-size: 15px;
-    line-height: 25px;
-    margin-top: 30px;
-  }
-  .clients {
-    grid-area: clients;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    height: 100%;
-    width: 70%;
-    margin: 30px auto;
-  }
-  .clients img {
-    margin-bottom: 20px;
-  }
-  .clients p {
-    margin-bottom: 20px;
-  }
+	.about {
+		grid-template-columns: 1fr;
+	}
+	.about .item {
+		padding: 15%;
+		text-align: center;
+	}
+	.about .item h2 {
+		font-size: 23px;
+		margin-bottom: 20px;
+		font-weight: 900;
+	}
 
-  .clients .position {
-    margin-top: 5px;
-  }
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
-  }
-  .projects img {
-    width: 100%;
-  }
+	.about .item p {
+		font-size: 15px;
+		font-family: "Barlow", sans-serif;
+		color: var(--Dark-grayish-blue);
+		margin-bottom: 20px;
+		line-height: 20px;
+	}
+	.about .image.right {
+		background: url("../Images/Mobile/image-transform.jpg") center center no-repeat;
+		background-size: cover;
+		height: 50vh;
+	}
+	.about .image.left {
+		background: url("../Images/Mobile/image-stand-out.jpg") center center no-repeat;
+		background-size: cover;
+		height: 50vh;
+	}
+	.services {
+		grid-area: services;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.services h3 {
+		margin-top: 30px;
+		font-weight: 900;
+		font-size: 22px;
+	}
+	.services .description {
+		padding: 10%;
+		margin-top: 250px;
+	}
+	.services .description p {
+		font-size: 15px;
+		line-height: 25px;
+		margin-top: 30px;
+	}
+	.clients {
+		grid-area: clients;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		gap: 10px;
+		height: 100%;
+		width: 70%;
+		margin: 30px auto;
+	}
+	.clients img {
+		margin-bottom: 20px;
+	}
+	.clients p {
+		margin-bottom: 20px;
+	}
+
+	.clients .position {
+		margin-top: 5px;
+	}
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 50px;
+	}
+	.projects img {
+		width: 100%;
+	}
 }
