@@ -26,4 +26,4 @@ Este projeto consiste na criação de uma Landing Page, desafio do site Frontend
 ### Mobile:
   <img src="./Readme/Mobile.gif" alt="gif do projeto em tela mobile">
 
-[Clique aqui]( https://jessica-os.github.io/Agencia-Sunnyside/) para ver o projeto pronto!
+
